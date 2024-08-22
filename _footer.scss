@@ -1,0 +1,9 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.attribution{
+    padding: 5rem;
+    @include m.telefono{
+        padding: 1rem;
+    }
+}

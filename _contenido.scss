@@ -1,0 +1,56 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.card-contenido{
+    background-color: v.$blanco;
+    padding: 3rem 4rem;
+    font-family: v.$fuente_principal;
+    border-radius: 0 1rem 1rem 0;
+    @include m.telefono{
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+.encabezado{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: .5rem;
+}
+.titulo{
+    font-family: v.$fuente_secundaria;
+    font-size: 3.5rem;
+}
+.descripcion{
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.precio{
+    color: v.$cian;
+    font-family: v.$fuente_secundaria;
+    font-weight: 700;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.rebaja{
+    color: gray;
+    font-size: 1.3rem;
+    text-decoration: line-through;
+    font-weight: normal;
+}
+.carrito{
+    background-color: v.$cian;
+    color: v.$blanco;
+    padding: 1.3rem;
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    &:hover{
+        background-color: v.$cian-oscuro;
+    }
+}
